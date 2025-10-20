@@ -1,27 +1,23 @@
-# -*- coding: cp1251 -*-
-
-temperature = float(input("Введите температуру в градусах: "))
-
-is_rainy_input = input("Идет дождь? (да/нет): ")
- 
-is_rainy = (is_rainy_input == "да")
+temperature = float(input("РљР°РєР°СЏ С‚РµРјРїРµСЂР°С‚СѓСЂР° РЅР° СѓР»РёС†Рµ? "))
 
 if 20 < temperature < 30:
+    is_rainy_input = input("РРґРµС‚ РґРѕР¶РґСЊ? (РґР°\РЅРµС‚): ")
+    is_rainy = (is_rainy_input == "РґР°")
     if is_rainy:
-        print("Футболку, шорты и дождевик")
+        print("Р¤СѓС‚Р±РѕР»РєР°, С€РѕСЂС‚С‹ Рё РґРѕР¶РґРµРІРёРє")
     else:
-        print("Футболку и шорты")
+        print("С„СѓС‚Р±РѕР»РєР° Рё С€РѕСЂС‚С‹")
 
 elif temperature <= 0:
-    print("Пуховик")
+    print("РџСѓС…РѕРІРёРє")
 
 else:
     if is_rainy:
-        is_raining_heavily_input = input("Сильный ли дождь? (да/нет): ")
-        is_raining_heavily = (is_raining_heavily_input == "да")
+        is_raining_heavily_input = input("Р”РѕР¶РґСЊ СЃРёР»СЊРЅС‹Р№? (РґР°\РЅРµС‚): ")
+        is_raining_heavily = (is_raining_heavily_input == "РґР°")
         if is_raining_heavily:
-            print("Пальто, резиновые сапоги и зонт")
+            print("РџР°Р»СЊС‚Рѕ, СЂРµР·РёРЅРѕРІС‹Рµ СЃР°РїРѕРіРё Рё Р·РѕРЅС‚")
         else:
-            print("Пальто и дождевик")
+            print("РџР°Р»СЊС‚Рѕ Рё РґРѕР¶РґРµРІРёРє")
     else:
-        print("Пальто")
+        print("РџР°Р»СЊС‚Рѕ")
