@@ -12,6 +12,8 @@ elif temperature <= 0:
     print("Пуховик")
 
 else:
+    is_rainy_input = input("Идет дождь? (да\нет): ")
+    is_rainy = (is_rainy_input == "да")
     if is_rainy:
         is_raining_heavily_input = input("Дождь сильный? (да\нет): ")
         is_raining_heavily = (is_raining_heavily_input == "да")
